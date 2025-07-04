@@ -1,0 +1,22 @@
+.customNext,
+.customPrev {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  cursor: pointer;
+  color: black;
+  font-size: 2rem; /* Aumenta el tamaño de íconos <i> */
+}
+
+.customNext {
+  right: 5px;
+}
+
+.customPrev {
+  left: 5px;
+}
+
+.customPrev svg {
+  width: 48px;
+  height: 48px;
+}

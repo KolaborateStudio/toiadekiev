@@ -1,0 +1,101 @@
+.faqContainer {
+  width: 100%;
+}
+
+.searchInput:focus {
+  outline: none;
+  box-shadow: none; /* Por si hay sombra al foco */
+}
+.bannerContainer {
+  text-align: center;
+  background-color: #1a1a1a;
+  height: 26vh;
+  color: white;
+  padding-top: 5vh; /* ✅ Espacio desde arriba */
+}
+
+.bannerTitle {
+ font-family: Martina, serif;
+    font-size: 1.75rem;
+    font-variant-numeric: lining-nums;
+    font-weight: 300;
+    letter-spacing: -.01em;
+    line-height: 1;
+    margin: 0 0 20px;
+      color: white;
+}
+
+.bannerSubtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.searchBox {
+  display: flex;
+  justify-content: center;
+  font-size: 1.75rem;
+    font-variant-numeric: lining-nums;
+    font-weight: 300;
+    letter-spacing: -.01em;
+    line-height: 1;
+    margin: 0 0 20px;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: 20vh 1fr 1fr 1fr 20vh; /* margen lateral de 20vh */
+  gap: 2rem;
+  padding: 0;              /* elimina padding lateral para que margen funcione bien */
+  margin: 0;               /* elimina margin erróneo */
+  background-color: #f1f0ee;
+  padding-bottom: 15vh;
+}
+
+/* Para que cada sección FAQ ocupe solo una columna central */
+.faqSection {
+  padding: 1.2rem;
+  border-radius: 8px;
+}
+
+.faqQuestion{
+    cursor: pointer;
+    font-family: Plain, sans-serif;
+    font-size: 1;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+/* Asignar manualmente cada faqSection a columnas centrales (2,3,4) para filas de 3 */
+.faqSection:nth-child(3n + 1) {
+  grid-column-start: 2;
+}
+.faqSection:nth-child(3n + 2) {
+  grid-column-start: 3;
+}
+.faqSection:nth-child(3n) {
+  grid-column-start: 4;
+}
+
+.seeMore {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.faqTitle{
+  font-family: Plain, sans-serif;
+    font-size: 1;
+    font-weight: 600;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+

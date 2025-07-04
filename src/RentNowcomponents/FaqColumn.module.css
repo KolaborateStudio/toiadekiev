@@ -1,0 +1,72 @@
+ 
+
+.faqSection {
+  margin: 3rem auto;
+  margin-top: 15vh;
+  padding: 0 1rem;
+}
+
+.faqSection h2 {
+  font-family: 'Martina', serif; /* Asegúrate de importar la fuente */
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 48px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.faqList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faqItem {
+  background-color: rgba(247, 247, 247, 1);
+  margin-bottom: 2vh;
+  padding: 0px 32px 0px 32px;
+  width: 60%;
+  margin: 0 auto 2vh auto; /* top 0, bottom 2vh, centrado horizontal */
+  border-radius: 11px;
+}
+
+.questionButton {
+  font-family: 'Plain', sans-serif; /* o la fuente que uses */
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(0, 0, 0);
+  background: none;
+  border: none;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+
+.toggleIcon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+  user-select: none;
+}
+
+.toggleIcon.open {
+  transform: rotate(45deg); /* Cambia + a x para abrir */
+}
+
+.answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+  color: #555;
+}
+
+.answer p {
+  margin: 0.5rem 0 1rem 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}

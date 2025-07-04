@@ -1,0 +1,41 @@
+ body{
+    margin:0px;
+    overflow-x: hidden; /* evita scroll horizontal */
+ }
+
+@font-face {
+  font-family: 'Martina';
+  src: url('./webfonts/Martina/martina-plantijn-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plain';
+  src: url('./webfonts/Plain/Plain-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Plain-Light';
+  src: url('./webfonts/Plain/Plain-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Plain-Medium';
+  src: url('./webfonts/Plain/Plain-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Plain-Regular';
+  src: url('./webfonts/Plain/Plain-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

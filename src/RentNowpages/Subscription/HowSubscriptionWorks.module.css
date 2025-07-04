@@ -1,0 +1,54 @@
+
+.howSubscriptionWorks {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  font-family: 'Martina', serif;
+  color: #222;
+  text-align: center;
+}
+
+.howSubscriptionWorks h2 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-family: 'Martina', serif;
+  line-height: 10px;
+}
+
+.stepsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.stepsList li {
+  flex: 1;
+  text-align: center;
+}
+
+.stepNumber {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #FF6F61;
+  margin-right: 0.5rem;
+}
+
+.stepsList h3 {
+  display: inline-block; /* Para que quede en línea con número */
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  vertical-align: middle;
+    font-family: 'Martina', serif;
+}
+
+.stepsList p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #555;
+}
+

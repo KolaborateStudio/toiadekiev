@@ -1,0 +1,186 @@
+/* Navbar.module.css */
+
+/* Contenedor principal del navbar */
+.main {
+  position: sticky;
+  top: 0; /* navbar pegado al top */
+  z-index: 990;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1.5rem 0vh;
+  font-size: 14px; /* 0.875rem = 14px */
+  font-family: 'Plain', sans-serif; /* "Plain" como nombre de fuente */
+  font-weight: 300; /* Peso de la fuente */
+  border-bottom: 1px solid #DDDDDD;
+  color: rgb(0, 0, 0);
+}
+
+
+/* Banner promocional debajo del navbar */
+.banner {
+  position: sticky;
+  top: 5rem;             /* espacio suficiente debajo del navbar */
+  z-index: 999;
+  height: 5vh;
+  background-color: #D5EF87;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+  text-align: center;
+}
+
+.banner p {
+  font-family: 'Plain', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.closeButton {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  line-height: 1;
+}
+
+/* Listas del navbar */
+.ver1, .ver2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo general para los links */
+.ver1 a, .ver2 a {
+  text-decoration: none;
+  color: black!important;
+  line-height: 86px ;
+  cursor: pointer;
+}
+
+/* Hover de links */
+.ver1 a:hover, .ver2 a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+/* Botón de membresía */
+.ver2 button {
+  cursor: pointer;
+  border: none;
+  line-height: 1.1;
+  white-space: pre-line;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+}
+
+/* Input de búsqueda */
+.searchWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.searchInput {
+  position: absolute;
+  top: 20%;
+  right: 1rem;
+  width: 20px;          /* ancho mínimo */
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: width 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.searchInput.open {
+  width: 35vh;        /* ancho expandido */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.ver1bis {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.ver1bis {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Animación de entrada del input */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50%) translateX(-10vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-50%) translateX(0);
+    opacity: 1;
+  }
+  
+}
+
+/* Icono de búsqueda */
+.fa-search {
+  cursor: pointer;
+}
+
+/* li que tiene estilos inline (como onClick) sin viñetas */
+.ver1 li[style] {
+  list-style: none;
+}
+
+/* Para que el input no tape otros elementos */
+nav {
+  position: relative;
+  z-index: 1;
+}
+
+.letGetIt {
+  font-family: 'Plain', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px; /* calculado como 1.3 * 14px */
+  letter-spacing: 0;
+  color: #000;
+  padding: 0;
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
+  margin: auto 0;
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  -webkit-tap-highlight-color: transparent;
+}

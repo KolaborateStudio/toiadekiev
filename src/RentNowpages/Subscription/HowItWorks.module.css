@@ -1,0 +1,142 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #c2185b;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.sectionAlt {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 12px;
+}
+
+.heading {
+  font-size: 1.8rem;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  font-size: 1.3rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.button {
+  background-color: #c2185b;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.buttonSecondary {
+  background-color: transparent;
+  border: 2px solid #c2185b;
+  color: #c2185b;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.step h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.step p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.guarantee {
+  font-size: 0.95rem;
+  color: #333;
+  margin-top: 1.5rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.stats div {
+  flex: 1;
+  font-size: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.categories span {
+  background-color: #f3f3f3;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,171 @@
+.faqContainer {
+  width: 100%;
+  background-color: #f1f0ee;
+}
+
+/* Banner */
+.bannerContainer {
+  text-align: center;
+  background-color: #1a1a1a;
+  height: 26vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5vh;
+}
+
+.bannerTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.bannerSubtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.searchBox {
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.searchInput:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* FAQ Grid */
+.faqGrid {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, minmax(250px, 1fr)) 1fr;
+  gap: 2rem;
+  padding: 5vh 0 15vh 0;
+}
+
+.faqSection {
+  position: relative;
+  padding: 1.2rem;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+
+
+/* Distribuir las secciones en las 3 columnas centrales */
+.faqSection:nth-child(3n + 1) {
+  grid-column-start: 2;
+}
+.faqSection:nth-child(3n + 2) {
+  grid-column-start: 3;
+}
+.faqSection:nth-child(3n) {
+  grid-column-start: 4;
+}
+
+.faqTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faqList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faqQuestion {
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.faqQuestion strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.seeMore {
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* FAQ Form */
+.faqForm {
+  max-width: 600px;
+  margin: 4vh auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.faqLabel {
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+.faqInput,
+.faqTextarea,
+.faqSelect {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.faqTextarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.faqButton {
+  margin-top: 1rem;
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.faqButton:hover {
+  background-color: #333;
+}
+
+
+
+.deleteCategoryBtn {
+  background: transparent;
+  border: none;
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.deleteCategoryBtn:hover {
+  color: darkred;
+}

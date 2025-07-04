@@ -1,0 +1,129 @@
+:root {
+  --offWhite: #f8f8f8;
+  --lighterGray: #d9d9d9;
+  --darkText: #222222;
+  --linkHover: #555555;
+}
+
+#footer {
+  border-top: 1px solid var(--lighterGray);
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: var(--darkText);
+}
+
+.container {
+  background-color: rgb(241 240 238 / var(--tw-bg-opacity, 1));
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  font-family: 'Plain', sans-serif;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px 64px;
+  padding-bottom: 48px;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    max-width: 900px; /* o el ancho que mejor se adapte */
+    margin: 0 auto;
+  }
+}
+
+.fontEyebrow {
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  color: var(--darkText);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 6px 0;
+}
+
+a {
+  color: var(--darkText);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 0.9rem;
+}
+
+a:hover,
+a:focus {
+  color: var(--linkHover);
+}
+
+.bottomBar {
+  border-top: 1px solid var(--lighterGray);
+  padding-top: 24px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--darkText);
+}
+
+.bottomBar p {
+  margin: 6px 0;
+}
+
+.bottomLinks {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.bottomLinks a {
+  color: var(--darkText);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.bottomLinks a:hover,
+.bottomLinks a:focus {
+  color: var(--linkHover);
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* o flex-start si los querés alineados a la izquierda */
+  align-items: center;
+  padding: 16px 0;
+}
+
+.social-icons a svg {
+  display: block;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icons a:hover svg,
+.social-icons a:focus svg {
+  fill: #1da1f2; /* un azul suave para hover, podés cambiar */
+}

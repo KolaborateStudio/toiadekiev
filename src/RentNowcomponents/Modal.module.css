@@ -1,0 +1,187 @@
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  width: 34%;
+  height: 100vh;
+  padding: 2rem 2rem 3rem 2rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+  border-radius: 0 0 0 12px;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.2rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #444;
+  line-height: 1;
+  transition: color 0.3s ease;
+}
+.closeButton:hover {
+  color: #900;
+}
+
+/* Promo Header */
+.promoHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.promoHeader h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-bottom: 0.3rem;
+  color: #720026; /* un color vino oscuro */
+}
+.promoHeader p {
+  font-size: 1rem;
+  color: #444;
+}
+.promoHeader strong {
+  font-weight: 700;
+  color: #b30039;
+}
+
+/* Plan Summary */
+.planSummary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
+}
+.planItem {
+  flex: 1;
+  background-color: #720026;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-right: 0.8rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 700;
+}
+.planItem:last-child {
+  margin-right: 0;
+}
+
+.planNumber {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.planLabel {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 0.2rem;
+}
+
+.planItemPrice {
+  flex: 1.4;
+  background-color: #720026;
+  color: white;
+  border-radius: 10px;
+  padding: 1rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.priceRow {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.25rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.currency {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.price {
+  font-family: 'Georgia', serif;
+  font-weight: 900;
+}
+
+.oldPrice {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: line-through;
+  opacity: 0.7;
+  color: #f4c3c9;
+}
+
+.priceLabel {
+  font-weight: 400;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+}
+
+/* Explore link */
+.explorePlans {
+  text-align: center;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #b30039;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Info Sections */
+.infoSection {
+  margin-bottom: 1.8rem;
+}
+.infoSection h3 {
+  font-weight: 700;
+  color: #720026;
+  margin-bottom: 0.4rem;
+}
+.infoSection p {
+  font-weight: 400;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* Sign Up button */
+.signUpButtonContainer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+.signUpButton {
+  background-color: #720026;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 0.75rem 3rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.signUpButton:hover {
+  background-color: #9e0045;
+}

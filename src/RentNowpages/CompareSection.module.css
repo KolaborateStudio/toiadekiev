@@ -1,0 +1,58 @@
+
+
+.compareSection {
+  text-align: center;
+  padding: 3rem 1rem;
+  font-family: 'Plain', sans-serif;
+  color: #000;
+}
+
+.compareTitle {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.compareSubtitle {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.compareTable {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.compareTable th,
+.compareTable td {
+  padding: 1rem;
+  border: 1px solid #eaeaea;
+}
+
+.compareTable th {
+  background-color: #f9f9f9;
+  font-weight: 400;
+}
+
+.compare-table .rentingHeader {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.compareTable tr:nth-child(even) td:last-child {
+  background-color: #f5f3f1;
+}
+
+.compareTable td {
+  text-align: center;
+}
+
+.compareTable td:first-child {
+  text-align: left;
+}
+
+ 

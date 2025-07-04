@@ -1,0 +1,42 @@
+
+.subscribeReasons {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Martina', serif;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  line-height: 10px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 1.5rem;
+}
+
+.reasonItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 0.75rem;
+  fill: #4caf50; /* Verde */
+}
+
+.reasonText {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+  max-width: 220px;
+}

@@ -1,0 +1,16 @@
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: #fefefe;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 8rem;
+  margin: 0;
+  color: #333;
+      margin-left:3vh;
+}

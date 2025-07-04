@@ -1,0 +1,319 @@
+.planSection{
+ background-color: #F0EEE9;
+ margin-top: -2vh;
+ padding-bottom: 10vh;
+}
+
+.Header1{
+ background-color: #F0EEE9;
+  text-align: center;
+  margin-top: -4vh;
+}
+
+.Header {
+  font-family: 'Martina', serif; /* Asumiendo que Martina es una fuente serif */
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  font-size: 48px;
+  padding-top:2vh ;
+  line-height: 43px;
+}
+
+.Subtitle {
+  font-family: 'Plain', sans-serif; /* Cambia 'Plain' por la fuente que uses */
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  line-height: 22px;
+   padding-bottom:4vh ;
+}
+ 
+.planGrid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.planCard {
+  max-width: 360px;
+  border-radius: 16px;
+  position: relative;
+  text-align: center;
+  flex: 1;
+  align-items: center!important;
+}
+
+.limited {
+  background-color: #e2d6c7;
+}
+
+.full {
+  background-color: #e7c8da;
+}
+
+.planName {
+  text-align: center;
+  font-family: 'Plain', sans-serif; /* 👈 asegurate de haber cargado esta fuente */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgb(0, 0, 0);
+}
+
+
+.planDescription {
+  font-family: 'Plain', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(0, 0, 0);
+  margin-top: -2vh;
+  text-align: center;
+}
+
+
+.cardBox {
+  background: white;
+  border-radius: 8px;
+  border: 2px solid black;
+  position: relative;
+  height: 25vh;
+  width: 31vh;
+}
+
+.badge {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #5c1a3c;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  font-weight: 600;          /* font-weight limpio */
+  font-family: 'Plain', sans-serif;  /* si 'Plain' es la fuente que usás */
+  font-size: 14px;
+  line-height: 14px;
+  border-radius: 4px;
+  margin-top: -3vh;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemsPerMonth .itemsPerMonthText{
+  font-weight: 400;
+  font-family: 'Plain', sans-serif; /* o la fuente que uses */
+  font-size: 20px;
+  line-height: 22px;
+  color: rgb(0, 0, 0);
+}
+.itemsPerMonth {
+  font-weight: 400;
+  font-family: 'Plain', sans-serif; /* reemplaza 'Plain' por la fuente que uses */
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  line-height: 60px;
+  margin-top: -1vh;
+  margin-left: -7vh;
+}
+
+
+.itemsPerMonth strong {
+  font-size: 2rem;
+}
+
+.priceNow {
+  font-weight: 400;
+  font-family: 'Plain', sans-serif; /* o la fuente que uses */
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  line-height: 26px;
+}
+
+.priceAmount {
+  font-size: 24px;
+}
+
+.priceAfter {
+  font-weight: 300;
+  font-family: 'Plain', sans-serif; /* cambia 'Plain' por la fuente que uses */
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  line-height: 26px;
+}
+
+
+.planDetails {
+  list-style: none;
+  text-align: left;
+}
+
+.planDetailItem {
+  font-weight: 300;
+  font-family: 'Plain', sans-serif; /* Cambia 'Plain' por la fuente que uses */
+  font-style: normal;
+  color: #000000; /* negro */
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.getStartedButton {
+  background-color: black;
+  color: white;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 60%;
+}
+
+.planGroup {
+  border-radius: 16px;
+  padding: 1.5rem;
+  background-color: #e7c8da; /* color base que se sobrescribe por clase */
+}
+
+.limited {
+  background-color: #e2d6c7 !important;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+
+.planCard {
+  border-radius: 0; /* 👈 para que encaje perfectamente en grupo */
+  flex: 1;
+  max-width: unset; /* para que no se limite si hay 2 o más en fila */
+  text-align: center;
+}
+
+.dividier{
+  border: none;          /* elimina borde por defecto */
+  height: 1px;           /* altura de la línea */
+  background-color: #000000; /* color gris claro, cambia según necesites */
+  width: 98%;
+}
+
+.cardBox {
+  height: 100%;
+  width: 31vh;
+  background: white;
+  border-radius: 8px;
+  border: 2px solid black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* distribuye verticalmente */
+  padding: 1rem; /* 🆕 espaciado interno */
+  box-sizing: border-box;
+}
+
+.cardContent {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  gap: 0.5rem;
+}
+
+.itemsPerMonth {
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.itemsPerMonthText {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.priceNow {
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: -13vh;
+  margin-top: -5vh;
+}
+
+
+.priceAmount {
+  font-size: 20px;
+}
+
+.priceAfter {
+  font-size: 12px;
+  line-height: 18px;
+    margin-left: -17.5vh;
+  margin-top: -2vh;
+}
+
+.getStartedButton {
+  font-size: 14px;
+  padding: 0.5rem 0.7rem;
+  width: 100%;
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  .planGrid {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .planGroupWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+  }
+
+  .planGroup {
+    flex-direction: row;
+    width: 90vw !important;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .planCard {
+    max-width: 100%;
+    flex: 1;
+  }
+
+  .cardBox {
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .cardContent {
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.5rem;
+  }
+
+  .itemsPerMonth {
+    font-size: 2rem;
+    justify-content: flex-start;
+  }
+
+  .priceNow,
+  .priceAfter {
+    margin-left: 0;
+  }
+
+  .getStartedButton {
+    width: fit-content;
+    align-self: flex-start;
+  }
+}

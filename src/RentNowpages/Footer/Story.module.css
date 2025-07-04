@@ -1,0 +1,49 @@
+ .storyContainer {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  background-color: #fffaf5;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #8c4c4c;
+  font-weight: bold;
+}
+
+.event {
+  margin-bottom: 3rem;
+  border-left: 4px solid #d7b49e;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.eventDate {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #a97c6d;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.eventTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #4b2e2e;
+}
+
+.eventDescription {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.imageAlt {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #777;
+}

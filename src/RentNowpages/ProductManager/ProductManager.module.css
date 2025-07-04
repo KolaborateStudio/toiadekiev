@@ -1,0 +1,215 @@
+.container {
+  padding: 2rem;
+  max-width: 90vw;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* FORM */
+.form {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.form label {
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.form input[type="text"],
+.form input[type="file"] {
+  margin-top: 0.3rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form input[type="text"]:focus,
+.form input[type="file"]:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.form button {
+  background-color: #0066cc;
+  border: none;
+  color: white;
+  font-weight: 700;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  align-self: flex-start;
+}
+
+.form button:hover {
+  background-color: #004999;
+}
+
+/* LISTA DE PRODUCTOS */
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+  transition: transform 0.2s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.buttons button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.buttons button:hover {
+  background-color: #ddd;
+}
+
+/* === NUEVO: ESTILOS PARA HOME === */
+.homeSection {
+  max-height: 40vh;
+  max-width: 80vw;
+  margin: 0 auto 2rem auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+
+.homeImageThumbnail {
+  max-height: 30vh;
+  width: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+/* El título centrado */
+.homeTitle {
+  flex: 1 1 auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #0066cc;
+  user-select: none;
+  padding: 0 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Contenedor para preview imágenes dentro del formulario */
+.homeImagePreviewContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Cada preview individual */
+.homeImagePreview {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homeImagePreview img {
+  max-height: 12vh;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.15);
+}
+
+.homeImagePreview button {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff4d4f;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 720px) {
+  .homeSection {
+    flex-direction: column;
+    max-height: none;
+    max-width: 95vw;
+  }
+  .homeImageThumbnail {
+    max-height: 18vh;
+  }
+  .homeTitle {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+  }
+  .form label {
+    flex: 1 1 100%;
+  }
+}

@@ -1,0 +1,83 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #880e4f;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #444;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.3rem;
+}
+
+.quote {
+  font-style: italic;
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #c2185b;
+  font-size: 1.05rem;
+  color: #555;
+}
+
+.quote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-style: normal;
+  color: #000;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.article {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.outlet {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #c2185b;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 1rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

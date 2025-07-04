@@ -1,0 +1,540 @@
+.container {
+  height: auto;
+}
+
+.columnsWrapper {
+  display: flex;
+  height: 100%;
+}
+
+.leftColumn {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.topImages {
+  display: flex;
+  gap: 0.2rem;
+  height: 90vh;
+}
+
+.mainImage {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bottomImages {
+  display: flex;
+  gap: 0.2rem;
+  margin-top: 0.1rem;
+  height: 57vh;
+}
+
+.smallImage {
+  width: 33.33%;
+  height: 100%;
+  object-fit: cover;
+}
+.rightColumn {
+  top: 10vh;
+  width: 35%;
+  position: sticky;
+  left: 0;
+  height: 100vh;
+  background-color: #fafafa;
+  border-left: 1px solid #ddd;
+  border-left: none;
+   height: 100%;
+}
+
+
+
+.productInfo {
+  max-width: 500px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 32px 32px 0 0px;
+}
+
+.select {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.button {
+  background-color: #7a173f;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  color: #666;
+}
+
+.infoBox {
+  margin-top: 2rem;
+  background-color: #e9f0e1;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.infoHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.infoHeader img {
+  height: 2vh;
+  width: 2vh;
+}
+
+.infoBox h3 {
+  margin: 0;
+  font-size: 1rem;
+    font-family: 'Plain',sans-serif;
+      font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+.infoBox p {
+    font-family: 'Plain',sans-serif;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+
+.productName {
+  color: rgb(148, 143, 138);
+  font-family: 'Plain', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.designerName {
+  color: rgb(0, 0, 0);
+  font-family: 'Plain', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: underline;
+}
+
+.originalRetail {
+  font-family: 'Plain', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(102, 102, 102);
+  z-index: 1;
+}
+
+.OriginalRetail{
+height: 10vh;
+}
+
+.tooltipWrapper {
+  position: relative;
+  display: inline-block;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.tooltipIcon {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  color: #666;
+}
+
+.tooltipWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipIcon {
+  cursor: pointer;
+  color: #555;
+  width: 14px;
+  height: 14px;
+}
+
+.tooltipText {
+  visibility: hidden;
+  opacity: 0;
+  width: 220px;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  line-height: 1.4;
+  transition: opacity 0.3s ease;
+  pointer-events: auto; /* 🔥 Importante: ahora sí recibe hover */
+  z-index: 9999;
+}
+
+.tooltipWrapper:hover .tooltipText,
+.tooltipText:hover {
+  visibility: visible;
+  opacity: 1;
+   z-index: 9999;
+}
+
+
+.FAQ{
+  text-decoration: underline;
+}
+ 
+.productDetailsContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.detailBox {
+  flex: 1;
+  min-width: 250px;
+  max-width: 33%;
+}
+
+.detailHeading {
+  font-family: 'Martina', serif;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  color: rgb(0, 0, 0);
+  grid-column: 1 / 4;
+        margin: 80px 0 24px;
+        padding-left: 56px;
+        font-size: 28px;
+
+        line-height: 1;
+    letter-spacing: -0.01em;
+    font-variant-numeric: lining-nums;
+}
+
+.detailText {
+  font-family: 'Plain', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(0, 0, 0);
+  padding-left: 56px;
+}
+
+.secondSection{
+  font-family: 'Plain', sans-serif;
+  font-weight:300;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  color: rgb(0, 0, 0);
+  padding-left: 56px;
+  line-height: 18px;
+}
+
+.thirdSection{
+  font-family: 'Plain', serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  color: rgb(0, 0, 0);
+  padding-left: 56px;
+  line-height:18px ;
+}
+
+.detailText2{
+ font-family: 'Plain', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(0, 0, 0);
+  padding-left: 56px;
+  margin-top: -1vh;
+}
+
+.detailText3{
+ font-family: 'Plain', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(0, 0, 0);
+  padding-left: 56px;
+  margin-top: 5vh;
+  margin-bottom: -2vh;
+}
+
+.carouselWrapper {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.carouselItem {
+  flex: 0 0 auto;
+  width: 220px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageWrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+.info {
+  padding: 0.5rem;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.designer {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Plain', sans-serif;
+}
+
+.name {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-top: 0.2rem;
+  font-family: 'Plain', sans-serif;
+}
+
+.heartBtn {
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.heartIcon {
+  fill: #999;
+  transition: fill 0.2s ease;
+      fill: #fff;
+    stroke: #000;
+    transition: stroke .15s ease-in-out;
+}
+
+.heartIcon:hover {
+  fill: crimson;
+}
+
+.liked {
+  fill: red;
+}
+
+
+
+/* ShareButtons.module.css */
+.shareContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+
+.shareButton {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: grey;
+}
+
+.shareButton2{
+color: grey;
+}
+.shareButton:hover {
+color:blue
+}
+
+.shareButton2 {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.pinterestIcon {
+  width: 30px;
+  height: 35px;
+  fill: #888; /* gris por defecto */
+  transition: fill 0.3s ease;
+  margin-top: 0.5vh;
+  margin-left: -5vh;
+}
+
+.shareButton2:hover .pinterestIcon {
+  fill: red; /* rojo al hacer hover */
+}
+
+
+.shareButton svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.rentTheLook {
+  width: 44.2%;
+}
+
+.rentTheLookCards {
+  display: flex;
+  width: 100%; /* importante */
+  height: 59vh;
+}
+
+.rentTheLookCard1{
+  margin-right: 0.3vh;
+}
+.rentTheLookCard1,
+.rentTheLookCard2 {
+  width: 50%; /* 50% cada una */
+}
+
+.rentTheLookCard2{
+
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.heartBtn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  z-index: 3;
+  transition: background 0.2s;
+}
+
+.heartBtn:hover {
+  background: #fbe9e7;
+}
+
+.defaultImage,
+.hoverImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  transition: opacity 0.4s ease;
+}
+
+.hoverImage {
+  opacity: 0;
+  z-index: 2;
+}
+
+.imageWrapper:hover .hoverImage {
+  opacity: 1;
+}
+
+.imageWrapper:hover .defaultImage {
+  opacity: 0;
+}
+
+.designerInfoAccessory{
+    font-family: 'Plain', sans-serif;
+  font-weight:600;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  color: rgb(0, 0, 0);
+  line-height: 18px;
+}
+
+
+.designerInfoAccessory2{
+    font-family: 'Plain', sans-serif;
+  font-weight:300;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  color: rgb(0, 0, 0);
+  line-height: 18px;
+}
+
+
+.vh{
+  height: 10vh;
+}

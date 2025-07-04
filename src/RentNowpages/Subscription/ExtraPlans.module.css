@@ -1,0 +1,145 @@
+.extraPlans {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 3rem 1rem;
+  background-color: #f0eee9;
+  scroll-snap-type: x mandatory;
+  padding-top: 10vh;
+}
+
+.planCard {
+  flex: 0 0 320px;
+  border-radius: 16px;
+  padding: 1.5rem;
+  position: relative;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flexible {
+}
+
+.planName {
+  font-family: 'Plain', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: black;
+  text-align: center;
+}
+
+.planDescription {
+  font-family: 'Plain', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cardBox {
+  background: white;
+  border-radius: 8px;
+  position: relative;
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #5c1a3c;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  font-weight: 600;
+  font-family: 'Plain', sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  border-radius: 4px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.itemsPerMonth {
+  font-family: 'Plain', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+
+.itemsPerMonth strong {
+  font-size: 32px;
+}
+
+.priceNow {
+  font-family: 'Plain', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+}
+
+.priceAfter {
+  font-family: 'Plain', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+}
+
+.planDetails {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1rem 0;
+  font-family: 'Plain', sans-serif;
+  font-size: 14px;
+  color: black;
+  text-align: left;
+  width: 100%;
+}
+
+.planDetailItem {
+  margin-bottom: 0.3rem;
+}
+
+.getStartedButton {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  font-family: 'Plain', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.getStartedButton:hover {
+  background-color: #333;
+}
+
+.Title {
+  text-align: center;
+  font-family: 'Martina', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 33px;
+  color: rgb(0, 0, 0);
+  margin-bottom: -7vh;
+}

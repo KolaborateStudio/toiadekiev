@@ -1,0 +1,54 @@
+
+.faqForm {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faqTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.faqLabel {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.faqInput,
+.faqTextarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.faqTextarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.faqButton {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.faqButton:hover {
+  background-color: #333;
+}

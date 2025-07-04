@@ -1,0 +1,69 @@
+.carouselWrapper {
+  padding: 2rem;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.title {
+  padding: 0 0 2rem 0;
+  font-family: 'Martina', serif;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+.slick-slide {
+  padding: 0 !important;
+  margin: 0 !important; /* margin se maneja desde React inline */
+}
+
+.slick-track {
+  display: flex !important;
+  gap: 0 !important;  /* sin gap, manejamos margen por React */
+}
+
+.slick-slide > div {
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  width: 28vh;
+}
+
+.image {
+  width: 100%;
+  height: 42vh;
+  object-fit: cover;
+  display: block;
+}
+
+.designer {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.25rem 0.5rem;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 20;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 24px;
+  color: black;
+}

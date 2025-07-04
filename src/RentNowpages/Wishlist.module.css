@@ -1,0 +1,94 @@
+.checkoutContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 70px; /* Espacio para asegurar que el botón no se sobreponga */
+}
+
+.cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 10px; /* Evita el corte visual del scrollbar */
+  -webkit-overflow-scrolling: touch; /* Mejor rendimiento de scroll en iOS */
+  margin-bottom: 70px; /* Asegura que el último ítem no se corte */
+}
+
+.cartItem {
+  display: flex;
+  gap: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  min-height: 120px;
+  align-items: center;
+}
+
+.cartItemImage {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.cartItemInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  flex: 1;
+}
+
+.cartItemQuantity {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.quantityControl {
+  font-size: 1.8rem;
+  cursor: pointer;
+  user-select: none;
+  padding: 8px 12px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.quantityControl:hover {
+  transform: scale(1.2);
+}
+
+.quantityControl:active {
+  transform: scale(1);
+}
+
+.cartItemPrice {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.cartSummary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: auto; /* Asegura que el resumen siempre esté al final */
+  z-index: 10;
+}
+
+.checkoutButton {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.checkoutButton:hover {
+  background-color: #218838;
+}

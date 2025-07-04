@@ -1,0 +1,112 @@
+.newsletterContainer {
+  background-color: #091b2b;
+  padding: 2rem 3rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; /* texto alineado a la izquierda */
+}
+
+.newsletterContainer > div:first-child {
+  flex: 1 1 50%;
+  margin-left: 9rem; /* margen a la izquierda que quieras */
+}
+
+.newsletterContainer > div:last-child {
+  flex: 1 1 40%;
+}
+
+.newsletterTitle {
+  font-size: 1.8rem;
+  margin-bottom: -0.8rem;
+}
+
+.newsletterDescription {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Plain', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+.underlineHover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: inherit; /* hereda color del texto */
+  transition: color 0.3s ease;
+}
+
+.newsletterForm {
+  display: flex;
+  justify-content: flex-start; /* formulario alineado a la izquierda de su columna */
+  align-items: center;
+  gap: 0;
+  width: 90%;
+}
+
+.newsletterInput {
+  flex-grow: 2;
+  min-width: 0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-right: none;
+  color: #000;
+  border-radius:0px;
+}
+
+.newsletterInput:focus,
+.newsletterButton:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.newsletterInput::placeholder {
+  color: #666;
+}
+
+.newsletterButton {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  background-color: #091B2B;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletterButton:hover {
+  opacity: 1.5;
+}
+
+.newsletterDisclaimer {
+  font-size: .75rem;
+  max-width: 600px;
+  margin-top: 1rem;
+  font-family: 'Plain', sans-serif;
+}
+
+/* Responsive para pantallas pequeñas: columna vertical */
+@media (max-width: 700px) {
+  .newsletterContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsletterContainer > div:first-child,
+  .newsletterContainer > div:last-child {
+    flex: unset;
+    width: 100%;
+  }
+
+  .newsletterForm {
+    justify-content: center;
+  }
+}
+

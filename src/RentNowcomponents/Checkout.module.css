@@ -1,0 +1,107 @@
+.checkoutContainer {
+  display: flex;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Plain', sans-serif;
+  color: #222;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+.leftColumn {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.rightColumn {
+  flex: 1 1 35%;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  align-self: flex-start;
+  position: sticky;
+  top: 2rem;
+}
+
+.rightColumn h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.rightColumn p {
+  margin: 0.5rem 0;
+}
+
+.promo {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.priceSummary {
+  margin-top: 1.5rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.placeOrderButton {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.placeOrderButton:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+.returnButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem 0;
+  margin-bottom: 2rem;
+}
+
+.returnButton:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.returnButton::before {
+  content: '‹';
+  font-size: 1rem;
+  margin-right: 0.25rem;
+  color: #777;
+}
+
+.returnButton:hover::before {
+  color: #000;
+}
